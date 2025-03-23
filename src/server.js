@@ -6,8 +6,13 @@ const main = require("./main");
 const config = require("./config");
 
 app.set("port", (process.env.PORT || 4000));
-app.listen(app.get("port"), "0.0.0.0", () => {
-    console.log(`Server running on port ${app.get("port")}`);
+
+app.get("/", (req, res) => {
+    res.send("Hello, Fly.io!");
+});
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server is running on port ${PORT}`);
 });
 
 
