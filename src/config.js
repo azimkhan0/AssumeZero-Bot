@@ -1,22 +1,22 @@
 // The trigger word that precedes most commands and will activate the bot
-exports.trigger = "physics";
+exports.trigger = "senpai";
 
 // Bot owner information
 exports.owner = {
     "names": {
-        "short": "Cameron",
-        "long": "Cameron Bernhardt"
+        "short": "Zero",
+        "long": "Ace Zero"
     },
-    "id": "100007016509302" // ID of bot owner (for secure commands, reports, and alerts)
+    "id": "acezero.azim" // ID of bot owner (for secure commands, reports, and alerts)
 };
 
 // Bot information
 exports.bot = {
     "names": {
-        "short": "AØBøt", // Will be used as 'nickname' in chat (remove if same as account name)
-        "long": "AssumeZero Bot" // Name displayed in profile on bot's Facebook account
+        "short": "LoliBøt", // Will be used as 'nickname' in chat (remove if same as account name)
+        "long": "Loli Senpai Bot" // Name displayed in profile on bot's Facebook account
     },
-    "id": "100041587845629" // Bot's ID (for security purposes in commands)
+    "id": "kazuma.sato.767310" // Bot's ID (for security purposes in commands)
 };
 
 // Location of the bot repo if automatic GitHub webhook deploys are used
@@ -34,7 +34,7 @@ exports.defaultTitle = "Unnamed chat";
 
 // Heroku settings (might need to tweak some things if using another host)
 // App name
-exports.appName = "assume-bot";
+exports.appName = "zero-bot";
 
 // Server URL
 exports.serverURL = `http://${exports.appName}.herokuapp.com`;
@@ -50,7 +50,7 @@ exports.localSleepTime = 3;
 exports.localWakeTime = 9;
 
 // Your desired timezone for displaying times
-exports.timeZone = "America/New_York";
+exports.timeZone = "Bangladesh/Dhaka";
 
 // Time in seconds to ban users for Order 66
 exports.order66Time = 15;
@@ -62,13 +62,14 @@ exports.banTime = 30;
 exports.wakeUpTimes = 20;
 
 // Default color (hex)
-exports.defaultColor = "#67B868";
+exports.defaultColor = "#FF0000
+";
 
 // Number of random colors to cycle through for the "hit the lights" command
 exports.numColors = 10;
 
 // Default emoji
-exports.defaultEmoji = "🚀";
+exports.defaultEmoji = "💀";
 
 // For xkcd searching capability
 // Custom search engine that searches the xkcd website only
@@ -85,7 +86,7 @@ exports.votePoints = 5;
 
 // Default playlist to use if group has no added playlists
 exports.defaultPlaylist = {
-    "name": "Assume Zero Brain Power",
+    "name": "Zero Dimension",
     "user": "astrocb",
     "uri": "4joxRVv8wzT4keFzCS3gAt"
 };
@@ -99,7 +100,7 @@ exports.addBufferLimit = 5;
 // List of responses for "answer" command
 exports.answerResponses = ["Yes", "No", "Maybe", "It is certain", "Time will tell", "Ask again later",
     "Only if you believe", "Possibly", "Never", "Of course", "No way", "You're out of your mind", "Nope",
-    "Yep", "Good one", "Eh", "Si crees", "Por supuesto", "...", "Welp"
+    "Yep", "Good one", "Eh", "Uno Reverse", "Damn", "...", "Welp"
 ];
 
 // Default bounds for RNG command
