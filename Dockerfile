@@ -1,20 +1,23 @@
-# Use an official Node.js runtime as a parent image
-FROM node:18-alpine
+# Use official Node.js runtime as the base image
+FROM node:18
 
-# Set the working directory inside the container
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json first (for efficient caching)
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install --omit=dev
+RUN npm install --production
 
-# Copy the rest of the app's source code
+# Copy the rest of the application files
 COPY . .
 
-# Expose the port Fly.io will use
-EXPOSE 8080
+# Expose the port your app runs on
+EXPOSE 4000
+
+# Set environment variable for production
+ENV NODE_ENV=production
 
 # Start the application
-CMD ["node", "index.js"]
+CMD ["node", "server.js"]
