@@ -6,7 +6,10 @@ const main = require("./main");
 const config = require("./config");
 
 app.set("port", (process.env.PORT || 4000));
-app.listen(app.get("port"));
+app.listen(app.get("port"), "0.0.0.0", () => {
+    console.log(`Server running on port ${app.get("port")}`);
+});
+
 
 // Landing page
 app.get("/", (_, res) => {
