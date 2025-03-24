@@ -8,4 +8,5 @@
     handlers = ["tls", "http"]
     port = 443
 [build]
-  dockerfile = "Dockerfile"
+  builder = "paketobuildpacks/builder:base"
+  buildpacks = ["gcr.io/paketo-buildpacks/nodejs"]
