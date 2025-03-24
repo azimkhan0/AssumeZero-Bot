@@ -2,12 +2,15 @@
   "name": "zero-bot",
   "version": "1.0.0",
   "description": "A group chat bot for Otakuverse that performs a variety of functions.",
-  "main": "main.js",
-  "engines": {
-    "node": "12.18.2"
+  "main": "src/main.js",
+  "start": "node src/main.js",
+ "engines": {
+  "node": "18.x"
+}
+
   },
   "scripts": {
-    "start": "pm2 start src/main.js --name 'zero-bot'; npm run-script logs",
+    "start": "pm2-runtime start src/main.js --name 'zero-bot'"
     "restart": "pm2 restart zero-bot",
     "stop": "pm2 stop zero-bot",
     "logs": "pm2 logs zero-bot --lines=1000",
