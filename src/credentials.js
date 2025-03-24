@@ -1,0 +1,9 @@
+exports.FACEBOOK_EMAIL = "3rdgenerationofficial.media@gmail.com";
+exports.FACEBOOK_PASSWORD = "Mdazimkhan@2";
+exports.MEMCACHIER_USERNAME = "azimkhan.zero@gmail.com";
+exports.MEMCACHIER_PASSWORD = "Mdazimkhan@2";
+exports.MEMCACHIER_SERVERS = "your_memcachier_servers";
+exports.SPOTIFY_CLIENTID = "your_spotify_clientid";
+exports.SPOTIFY_CLIENTSECRET = "your_spotify_clientsecret";
+exports.WOLFRAM_KEY = "your_wolfram_api_key";
+exports.WEATHER_KEY = "your_open_weather_api_key";
