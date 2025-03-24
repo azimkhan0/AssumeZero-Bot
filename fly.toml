@@ -3,6 +3,7 @@ primary_region = "singapore"
 
 [build]
   builder = "heroku/buildpacks:20"
+   buildpacks = ["heroku/nodejs"]
 
 [[services]]
   internal_port = 8080
