@@ -1,24 +1,24 @@
 {
-  "name": "assumezero-bot",
-  "version": "2.0.0",
-  "description": "A group chat bot that performs a variety of functions.",
+  "name": "zero-bot",
+  "version": "1.0.0",
+  "description": "A group chat bot for Otakuverse that performs a variety of functions.",
   "main": "main.js",
   "engines": {
     "node": "12.18.2"
   },
   "scripts": {
-    "start": "pm2 start src/main.js --name 'assumezero-bot'; npm run-script logs",
-    "restart": "pm2 restart assumezero-bot",
-    "stop": "pm2 stop assumezero-bot",
-    "logs": "pm2 logs assumezero-bot --lines=1000",
+    "start": "pm2 start src/main.js --name 'zero-bot'; npm run-script logs",
+    "restart": "pm2 restart zero-bot",
+    "stop": "pm2 stop zero-bot",
+    "logs": "pm2 logs zero-bot --lines=1000",
     "login": "node src/main.js --force-login",
     "test": "node tests/tests.js"
   },
-  "author": "Cameron Bernhardt (AstroCB)",
+  "author": "Ace Zero",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AstroCB/AssumeZero-Bot"
+    "url": "https://github.com/azimkhan0/Zero-Bot.git"
   },
   "dependencies": {
     "@octokit/auth-app": "^2.11.0",
