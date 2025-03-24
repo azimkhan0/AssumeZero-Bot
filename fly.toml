@@ -2,7 +2,7 @@ app = "zero-bot"
 primary_region = "singapore"
 
 [build]
-  builder = "heroku/buildpacks:20"
+  image = "railwayapp/nixpacks"
 
 [[services]]
   internal_port = 8080
