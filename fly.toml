@@ -1,3 +1,5 @@
+app = "zero-bot"
+
 [[services]]
   internal_port = 8080
   protocol = "tcp"
